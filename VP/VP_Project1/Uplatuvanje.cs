@@ -62,11 +62,12 @@ namespace VP_Project1
 
         private void tb_uplata_TextChanged(object sender, EventArgs e)
         {
-            for (int i=0; i<this.tb_uplata.Text.Length; i++){
+            
                if (char.IsDigit(this.tb_uplata.Text.Last())==false){
                    MessageBox.Show("Уплатата мора да е број!");
                }
-}
+               
+
         }
 
         //private void tb_uplata_TextChanged(object sender, EventArgs e)
@@ -74,7 +75,7 @@ namespace VP_Project1
         //    //TODO : neso so konvertiranje od sting vo int
 
         //    //Konvertirawe od string vo int za da se mnozat posle
-        //    //tb_vkupno.Text = tb_koeficient.Text * tb_uplata.Text;
+        //    //tb_vkupno.Text = string.Format(Convert.ToInt32(tb_uplata.Text) * Convert.ToDecimal(tb_koeficient.Text));
         //}
 
     }
