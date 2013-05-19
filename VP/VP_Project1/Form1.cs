@@ -7,20 +7,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VP_Project1.Properties;
 
 namespace VP_Project1
 {
     public partial class Form1 : Form
     {
+        private Image slika;
+        private int a, b;
         public Form1()
         {
             InitializeComponent();
+            slika = Resources.food;
+            a = 50;
+            b = 50;
+            timer1.Start();
         }
 
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
+            Graphics g = e.Graphics;
+
+            g.DrawImageUnscaled(slika, a, b);
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            a += 10;
+            MessageBox.Show("da");
+            Invalidate();
+
+        }
+        /*
         private void Form1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             switch (e.KeyValue.ToString())
@@ -57,5 +76,6 @@ namespace VP_Project1
             g.DrawEllipse(a, e.X-60, e.Y-60, 120, 120);
             
         }
-    }
+    */
+         }
 }
