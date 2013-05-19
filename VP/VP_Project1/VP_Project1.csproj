@@ -80,6 +80,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\food.jpg" />
+    <None Include="Resources\k0_3.png" />
+    <None Include="Resources\k0_2.png" />
+    <None Include="Resources\k0_1.png" />
+    <None Include="Resources\k0_0.png" />
+    <None Include="Resources\k2_%281%29.png" />
+    <None Include="Resources\k1_%284%29.png" />
+    <None Include="Resources\k1_%283%29.png" />
+    <None Include="Resources\k1_%282%29.png" />
     <None Include="Resources\k3.png" />
     <None Include="Resources\k2.png" />
     <None Include="Resources\k1.png" />

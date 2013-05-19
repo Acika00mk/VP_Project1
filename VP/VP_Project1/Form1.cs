@@ -19,7 +19,6 @@ namespace VP_Project1
         {
             InitializeComponent();
             k0 = Resources.k0;
-            k1 = Resources.k1;
             k2 = Resources.k2;
             k3 = Resources.k3;           
             k0_x = 0;
@@ -40,7 +39,7 @@ namespace VP_Project1
             base.OnPaint(e);
             Graphics g = e.Graphics;
 
-            crtaj(g);
+            crtaj(g);           
             
         }
 
@@ -76,58 +75,30 @@ namespace VP_Project1
         {
             Invalidate();
         }
-        /*
-        private void Form1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
-        {
-            switch (e.KeyValue.ToString())
-            {
-                case "39" :
-                    label1.Text = "39";
-                label1.Left += 5;
-                    break;
-                case "40":
-                    label1.Text = "40";
-                    label1.Top += 5;
-                    break;
-                case "37":
-                    label1.Text = "37";
-                    label1.Left -= 5;
-                    break;
-                case "38":
-                    label1.Text = "39";
-                    label1.Top -= 5;
-                    break;
-                case "13":
-                    MessageBox.Show("Fire Missle");
-                    break;
-                default:
-                    break;
-            }
-            
-        }
 
-        private void Form1_MouseClick(object sender, MouseEventArgs e)
-        {
-            Pen a = new Pen(Color.Red,4);
-            Graphics g = this.CreateGraphics();
-            g.DrawEllipse(a, e.X-60, e.Y-60, 120, 120);
-            
-        }
-    */
         private void crtaj(Graphics g) {
             if(sis==0){
-            g.DrawImageUnscaled(k0, k0_x, k0_y);
-            g.DrawImageUnscaled(k1, k1_x, k1_y);
-            g.DrawImageUnscaled(k2, k2_x, k2_y);
-            g.DrawImageUnscaled(k3, k3_x, k3_y);
+                g.DrawImageUnscaled(Resources.k0_3, k0_x, k0_y);
+                g.DrawImageUnscaled(Resources.k1_0, k1_x, k1_y);
+                //g.DrawImageUnscaled(Resources.k2_1, k2_x, k2_y);
+                //g.DrawImageUnscaled(Resources.k3_1, k3_x, k3_y);
             sis = 1;
             }
-            else{
-                sis=0;
-                 g.DrawImageUnscaled(k3, k0_x, k0_y);
-                 g.DrawImageUnscaled(k2, k1_x, k1_y);
-                 g.DrawImageUnscaled(k1, k2_x, k2_y);
-                 g.DrawImageUnscaled(k0, k3_x, k3_y);
+            else if(sis==1){
+                g.DrawImageUnscaled(Resources.k0_1, k0_x, k0_y);
+                g.DrawImageUnscaled(Resources.k1_1, k1_x, k1_y);
+                 sis = 2;
+            }
+            else if (sis == 2) {
+                g.DrawImageUnscaled(Resources.k0_2, k0_x, k0_y);
+                g.DrawImageUnscaled(Resources.k1_2, k1_x, k1_y);
+                sis = 3;
+            }
+
+            else if (sis == 3) {
+                g.DrawImageUnscaled(Resources.k0_0, k0_x, k0_y);
+                g.DrawImageUnscaled(Resources.k1_3, k1_x, k1_y);
+                sis = 0;
             }
         }
          }
