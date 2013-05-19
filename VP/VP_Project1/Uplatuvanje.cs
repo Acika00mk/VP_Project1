@@ -12,6 +12,7 @@ namespace VP_Project1
 {
     public partial class Uplatuvanje : Form
     {
+        public Uplata up { get; set; }
         public Uplatuvanje()
         {
             InitializeComponent();
@@ -30,7 +31,9 @@ namespace VP_Project1
                 MessageBox.Show("Внеси колку пари уплаќаш!");
             }
             else {
-                Uplata up = new Uplata(tb_ime.Text, comboKonj.SelectedIndex, Convert.ToInt32(tb_koeficient.Text), Convert.ToInt32(tb_uplata.Text));
+                up = new Uplata(tb_ime.Text, comboKonj.SelectedIndex, Convert.ToDecimal(tb_koeficient.Text), Convert.ToInt32(tb_uplata.Text));
+                this.DialogResult = System.Windows.Forms.DialogResult.OK;
+                Close();
 
             }
 
@@ -59,11 +62,20 @@ namespace VP_Project1
 
         private void tb_uplata_TextChanged(object sender, EventArgs e)
         {
-            //TODO : neso so konvertiranje od sting vo int
-
-            //Konvertirawe od string vo int za da se mnozat posle
-            //tb_vkupno.Text = tb_koeficient.Text * tb_uplata.Text;
+            for (int i=0; i<this.tb_uplata.Text.Length; i++){
+               if (char.IsDigit(this.tb_uplata.Text.Last())==false){
+                   MessageBox.Show("Уплатата мора да е број!");
+               }
+}
         }
+
+        //private void tb_uplata_TextChanged(object sender, EventArgs e)
+        //{
+        //    //TODO : neso so konvertiranje od sting vo int
+
+        //    //Konvertirawe od string vo int za da se mnozat posle
+        //    //tb_vkupno.Text = tb_koeficient.Text * tb_uplata.Text;
+        //}
 
     }
 }

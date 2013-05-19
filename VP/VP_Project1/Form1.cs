@@ -16,7 +16,6 @@ namespace VP_Project1
         
         private Image k0, k1, k2, k3;
         private int k0_x, k1_x, k2_x, k3_x, k0_y, k1_y, k2_y, k3_y, sis;
-        private Uplatuvanje a;
         public Form1()
         {
             InitializeComponent();
@@ -157,8 +156,12 @@ namespace VP_Project1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            a = new Uplatuvanje();
-            a.Show();
+            Uplatuvanje upl = new Uplatuvanje();
+            if (upl.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                lbUplata.Items.Add(upl.up);
+            }
+            
         }
 
         

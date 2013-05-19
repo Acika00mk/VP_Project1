@@ -10,8 +10,8 @@ namespace VP_Project1
     {
         private string Name;
         private int Konj,Iznos;
-        private float  Koeficient, Vkupno;
-        public Uplata(string name, int konj, int koef,int iznos)
+        private decimal  Koeficient, Vkupno;
+        public Uplata(string name, int konj, decimal koef,int iznos)
         {
             Name = name;
             Konj = konj;
