@@ -41,23 +41,37 @@ namespace VP_Project1
             base.OnPaint(e);
             Graphics g = e.Graphics;
 
-            g.DrawImageUnscaled(k0, k0_y,k0_x);
-            g.DrawImageUnscaled(k1, k1_y,k1_x);
-            g.DrawImageUnscaled(k2,k2_y, k2_x);
-            g.DrawImageUnscaled(k3,k3_y, k3_x);
+            g.DrawImageUnscaled(k0, k0_x,k0_y);
+            g.DrawImageUnscaled(k1, k1_x,k1_y);
+            g.DrawImageUnscaled(k2,k2_x, k2_y);
+            g.DrawImageUnscaled(k3,k3_x, k3_y);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             
             var rand = new Random();
-            var s = rand.Next(0, 100);
+            var s = rand.Next(1, 100);
             label1.Text = s.ToString() ;
+            label2.Text = (s % 4).ToString();
             if (s % 4 == 0) {
                 k0_x += 10;
+                Invalidate();
+            }
+            else if (s % 4 == 1) {
+                k1_x += 10;
+                Invalidate();
+            }
+            else if (s % 4 == 2) {
+                k2_x += 10;
+                Invalidate();
+            }
+            else if (s % 4 == 3) {
+                k3_x += 10;
+                Invalidate();
             }
             
-            Invalidate();
+            
 
         }
         /*
