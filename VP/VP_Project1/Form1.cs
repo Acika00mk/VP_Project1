@@ -22,14 +22,14 @@ namespace VP_Project1
             k1 = Resources.k1;
             k2 = Resources.k2;
             k3 = Resources.k3;           
-            k0_y = 0;
-            k1_y = 0;
-            k2_y = 0;
-            k3_y = 0;
-            k0_x = 20;
-            k1_x = 70;
-            k2_x = 130;
-            k3_x = 180;
+            k0_x = 0;
+            k1_x = 0;
+            k2_x = 0;
+            k3_x = 0;
+            k0_y = 20;
+            k1_y = 70;
+            k2_y = 130;
+            k3_y = 180;
 
 
 
@@ -53,8 +53,8 @@ namespace VP_Project1
             var rand = new Random();
             var s = rand.Next(0, 100);
             label1.Text = s.ToString() ;
-            if (s % 4 == 0) { 
-                
+            if (s % 4 == 0) {
+                k0_x += 10;
             }
             
             Invalidate();
