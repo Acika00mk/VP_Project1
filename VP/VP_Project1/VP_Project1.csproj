@@ -52,6 +52,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Uplata.cs" />
+    <Compile Include="Uplatuvanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uplatuvanje.Designer.cs">
+      <DependentUpon>Uplatuvanje.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -65,6 +72,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Uplatuvanje.resx">
+      <DependentUpon>Uplatuvanje.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -80,6 +90,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\food.jpg" />
+    <None Include="Resources\k3_2.png" />
+    <None Include="Resources\k3_1.png" />
+    <None Include="Resources\k3_0.png" />
+    <None Include="Resources\k2_3.jpg" />
+    <None Include="Resources\k2_2.jpg" />
+    <None Include="Resources\k2_1.jpg" />
+    <None Include="Resources\k2_0.jpg" />
     <None Include="Resources\k0_3.png" />
     <None Include="Resources\k0_2.png" />
     <None Include="Resources\k0_1.png" />
