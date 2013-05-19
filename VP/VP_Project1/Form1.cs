@@ -13,18 +13,19 @@ namespace VP_Project1
 {
     public partial class Form1 : Form
     {
-        private Image slika,k0,k1,k2,k3;
-        private int a, b, k0_x, k1_x, k2_x, k3_x, k0_y, k1_y, k2_y, k3_y;
+        private Image k0,k1,k2,k3;
+        private int k0_x, k1_x, k2_x, k3_x, k0_y, k1_y, k2_y, k3_y;
         public Form1()
         {
             InitializeComponent();
-            slika = Resources.food;
             k0 = Resources.k0;
             k1 = Resources.k1;
             k2 = Resources.k2;
-            k3 = Resources.k3;
-            a = 50;
-            b = 15;
+            k3 = Resources.k3;           
+            k0_y = 0;
+            k1_y = 0;
+            k2_y = 0;
+            k3_y = 0;
             k0_x = 20;
             k1_x = 70;
             k2_x = 130;
@@ -40,16 +41,15 @@ namespace VP_Project1
             base.OnPaint(e);
             Graphics g = e.Graphics;
 
-            g.DrawImageUnscaled(slika, a, b);
-            g.DrawImageUnscaled(k0, b,k0_x);
-            g.DrawImageUnscaled(k1, b,k1_x);
-            g.DrawImageUnscaled(k2,b, k2_x);
-            g.DrawImageUnscaled(k3,b, k3_x);
+            g.DrawImageUnscaled(k0, k0_y,k0_x);
+            g.DrawImageUnscaled(k1, k1_y,k1_x);
+            g.DrawImageUnscaled(k2,k2_y, k2_x);
+            g.DrawImageUnscaled(k3,k3_y, k3_x);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            a += 10;
+            
             var rand = new Random();
             var s = rand.Next(0, 100);
             label1.Text = s.ToString() ;
