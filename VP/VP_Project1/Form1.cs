@@ -13,14 +13,25 @@ namespace VP_Project1
 {
     public partial class Form1 : Form
     {
-        private Image slika;
-        private int a, b;
+        private Image slika,k0,k1,k2,k3;
+        private int a, b, k0_x, k1_x, k2_x, k3_x, k0_y, k1_y, k2_y, k3_y;
         public Form1()
         {
             InitializeComponent();
             slika = Resources.food;
+            k0 = Resources.k0;
+            k1 = Resources.k1;
+            k2 = Resources.k2;
+            k3 = Resources.k3;
             a = 50;
-            b = 50;
+            b = 15;
+            k0_x = 20;
+            k1_x = 70;
+            k2_x = 130;
+            k3_x = 180;
+
+
+
             timer1.Start();
         }
 
@@ -30,12 +41,22 @@ namespace VP_Project1
             Graphics g = e.Graphics;
 
             g.DrawImageUnscaled(slika, a, b);
+            g.DrawImageUnscaled(k0, b,k0_x);
+            g.DrawImageUnscaled(k1, b,k1_x);
+            g.DrawImageUnscaled(k2,b, k2_x);
+            g.DrawImageUnscaled(k3,b, k3_x);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             a += 10;
-            MessageBox.Show("da");
+            var rand = new Random();
+            var s = rand.Next(0, 100);
+            label1.Text = s.ToString() ;
+            if (s % 4 == 0) { 
+                
+            }
+            
             Invalidate();
 
         }

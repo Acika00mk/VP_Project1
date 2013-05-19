@@ -80,6 +80,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\food.jpg" />
+    <None Include="Resources\k3.png" />
+    <None Include="Resources\k2.png" />
+    <None Include="Resources\k1.png" />
+    <None Include="Resources\k0.jpg" />
+    <None Include="Resources\k0.bmp" />
     <None Include="Resources\img.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
