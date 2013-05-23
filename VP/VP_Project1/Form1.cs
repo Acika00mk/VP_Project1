@@ -11,10 +11,10 @@ using VP_Project1.Properties;
 
 namespace VP_Project1
 {
-    public partial class Form1 : Form
+    public partial class form1 : Form
     {
         private int k0_x, k1_x, k2_x, k3_x, k0_y, k1_y, k2_y, k3_y, sis;
-        public Form1()
+        public form1()
         {
             InitializeComponent();
             vratiNazad();
@@ -106,7 +106,7 @@ namespace VP_Project1
             k0_y = 20;
             k1_y = 100;
             k2_y = 200;
-            k3_y = 380;
+            k3_y = 300;
             sis = 0;
         }
         public void End(int x, int konj)
@@ -154,6 +154,7 @@ namespace VP_Project1
             timer1.Start();
             timer2.Start();
         }
+
 
 
 

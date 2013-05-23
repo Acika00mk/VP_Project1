@@ -90,6 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\food.jpg" />
+    <None Include="Resources\Adobe Premiere.png" />
     <None Include="Resources\k3_2.png" />
     <None Include="Resources\k3_1.png" />
     <None Include="Resources\k3_0.png" />
