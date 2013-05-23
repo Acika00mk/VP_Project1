@@ -12,9 +12,11 @@ namespace VP_Project1
 {
     public partial class Uplatuvanje : Form
     {
+        public decimal vkupno { get; set; }
         public Uplata up { get; set; }
         public Uplatuvanje()
         {
+            vkupno = 1;
             InitializeComponent();
         }
 
@@ -44,15 +46,20 @@ namespace VP_Project1
             switch (comboKonj.SelectedIndex)
             {
                 case 0:
+                    vkupno = (decimal)2.25;
                     tb_koeficient.Text = "2.25";
+
                     break;
                 case 1:
+                    vkupno = (decimal)2.25;
                     tb_koeficient.Text = "1.25";
                     break;
                 case 2:
+                    vkupno = (decimal)2.25;
                     tb_koeficient.Text = "4.25";
                     break;
                 case 3:
+                    vkupno = (decimal)2.25;
                     tb_koeficient.Text = "5.25";
                     break;
                 default:
