@@ -61,21 +61,21 @@ namespace VP_Project1.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Bitmap icon {
+        internal static System.Drawing.Icon Adobe_Premiere {
             get {
-                object obj = ResourceManager.GetObject("icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                object obj = ResourceManager.GetObject("Adobe_Premiere", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap k0 {
+        internal static System.Drawing.Bitmap bg {
             get {
-                object obj = ResourceManager.GetObject("k0", resourceCulture);
+                object obj = ResourceManager.GetObject("bg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,16 +163,6 @@ namespace VP_Project1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap k2 {
-            get {
-                object obj = ResourceManager.GetObject("k2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap k2_0 {
             get {
                 object obj = ResourceManager.GetObject("k2_0", resourceCulture);
@@ -213,16 +203,6 @@ namespace VP_Project1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap k3 {
-            get {
-                object obj = ResourceManager.GetObject("k3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap k3_0 {
             get {
                 object obj = ResourceManager.GetObject("k3_0", resourceCulture);
@@ -246,6 +226,16 @@ namespace VP_Project1.Properties {
         internal static System.Drawing.Bitmap k3_2 {
             get {
                 object obj = ResourceManager.GetObject("k3_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap k3_3 {
+            get {
+                object obj = ResourceManager.GetObject("k3_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

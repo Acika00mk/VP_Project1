@@ -36,22 +36,22 @@ namespace VP_Project1
             label2.Text = (s % 4).ToString();
             if (s % 4 == 0)
             {
-                k0_x += 5;
+                k0_x += 12;
                 End(k0_x, 0);
             }
             else if (s % 4 == 1)
             {
-                k1_x += 5;
+                k1_x += 12;
                 End(k1_x, 1);
             }
             else if (s % 4 == 2)
             {
-                k2_x += 5;
+                k2_x += 12;
                 End(k2_x, 2);
             }
             else if (s % 4 == 3)
             {
-                k3_x += 5;
+                k3_x += 12;
                 End(k3_x, 3);
             }
         }
@@ -99,38 +99,45 @@ namespace VP_Project1
         }
         public void vratiNazad()
         {
+            button1.Enabled = true;
+            lbUplata.Items.Clear();
             k0_x = 0;
             k1_x = 0;
             k2_x = 0;
             k3_x = 0;
-            k0_y = 20;
-            k1_y = 100;
-            k2_y = 200;
-            k3_y = 300;
+            k0_y = -15;
+            k1_y = 70;
+            k2_y = 155;
+            k3_y = 240;
             sis = 0;
+            Invalidate();
         }
         public void End(int x, int konj)
         {
             Invalidate();
             label2.Text = x.ToString();
-            if (x == 100)
+            if (x > 385)
             {
                 timer1.Stop();
                 timer2.Stop();
-                vratiNazad();
+                
                 switch (konj)
                 {
                     case 0:
                         MessageBox.Show("Pobedi prviot");
+                        vratiNazad();
                         break;
                     case 1:
                         MessageBox.Show("Pobedi 2");
+                        vratiNazad();
                         break;
                     case 2:
                         MessageBox.Show("Pobedi 3");
+                        vratiNazad();
                         break;
                     case 3:
                         MessageBox.Show("Pobedi 4");
+                        vratiNazad();
                         break;
                     default:
                         break;
@@ -151,13 +158,10 @@ namespace VP_Project1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            button1.Enabled = false;
             timer1.Start();
             timer2.Start();
         }
-
-
-
-
     }
 
 }

@@ -52,6 +52,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Uplata.cs" />
     <Compile Include="Uplatuvanje.cs">
       <SubType>Form</SubType>
@@ -64,14 +69,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Uplatuvanje.resx">
       <DependentUpon>Uplatuvanje.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,18 +90,29 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\food.jpg" />
-    <None Include="Resources\Adobe Premiere.png" />
+    <None Include="Resources\bg.png" />
+    <None Include="Resources\k3_3.png" />
     <None Include="Resources\k3_2.png" />
     <None Include="Resources\k3_1.png" />
     <None Include="Resources\k3_0.png" />
-    <None Include="Resources\k2_3.jpg" />
-    <None Include="Resources\k2_2.jpg" />
-    <None Include="Resources\k2_1.jpg" />
-    <None Include="Resources\k2_0.jpg" />
+    <None Include="Resources\k2_3.png" />
+    <None Include="Resources\k2_2.png" />
+    <None Include="Resources\k2_1.png" />
+    <None Include="Resources\k2_0.png" />
+    <None Include="Resources\k1_3.png" />
+    <None Include="Resources\k1_2.png" />
+    <None Include="Resources\k1_1.png" />
+    <None Include="Resources\k1_0.png" />
     <None Include="Resources\k0_3.png" />
     <None Include="Resources\k0_2.png" />
     <None Include="Resources\k0_1.png" />
     <None Include="Resources\k0_0.png" />
+    <None Include="Resources\Adobe Premiere.ico" />
+    <None Include="Resources\Adobe Premiere.png" />
+    <None Include="Resources\k2_3.jpg" />
+    <None Include="Resources\k2_2.jpg" />
+    <None Include="Resources\k2_1.jpg" />
+    <None Include="Resources\k2_0.jpg" />
     <None Include="Resources\k2_%281%29.png" />
     <None Include="Resources\k1_%284%29.png" />
     <None Include="Resources\k1_%283%29.png" />

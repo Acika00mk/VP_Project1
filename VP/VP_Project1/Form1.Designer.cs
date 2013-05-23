@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form1));
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
@@ -41,7 +42,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(482, 294);
+            this.label1.Location = new System.Drawing.Point(595, 273);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(13, 13);
             this.label1.TabIndex = 0;
@@ -55,7 +56,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(570, 294);
+            this.label2.Location = new System.Drawing.Point(671, 273);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(19, 13);
             this.label2.TabIndex = 1;
@@ -69,14 +70,14 @@
             // lbUplata
             // 
             this.lbUplata.FormattingEnabled = true;
-            this.lbUplata.Location = new System.Drawing.Point(485, 12);
+            this.lbUplata.Location = new System.Drawing.Point(532, 1);
             this.lbUplata.Name = "lbUplata";
-            this.lbUplata.Size = new System.Drawing.Size(180, 173);
+            this.lbUplata.Size = new System.Drawing.Size(158, 147);
             this.lbUplata.TabIndex = 2;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(485, 191);
+            this.button1.Location = new System.Drawing.Point(546, 180);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
@@ -86,9 +87,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(485, 230);
+            this.button2.Location = new System.Drawing.Point(559, 209);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(168, 52);
+            this.button2.Size = new System.Drawing.Size(131, 52);
             this.button2.TabIndex = 4;
             this.button2.Text = "Старт";
             this.button2.UseVisualStyleBackColor = true;
@@ -98,13 +99,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::VP_Project1.Properties.Resources.bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(684, 361);
+            this.ClientSize = new System.Drawing.Size(699, 361);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lbUplata);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
