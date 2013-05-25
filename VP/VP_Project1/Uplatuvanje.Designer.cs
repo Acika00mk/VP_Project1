@@ -34,11 +34,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tb_koeficient = new System.Windows.Forms.TextBox();
-            this.tb_uplata = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.tb_vkupno = new System.Windows.Forms.TextBox();
+            this.tb_uplata = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // tb_ime
@@ -97,14 +97,6 @@
             this.tb_koeficient.Size = new System.Drawing.Size(51, 20);
             this.tb_koeficient.TabIndex = 5;
             // 
-            // tb_uplata
-            // 
-            this.tb_uplata.Location = new System.Drawing.Point(149, 153);
-            this.tb_uplata.Name = "tb_uplata";
-            this.tb_uplata.Size = new System.Drawing.Size(100, 20);
-            this.tb_uplata.TabIndex = 6;
-            this.tb_uplata.TextChanged += new System.EventHandler(this.tb_uplata_TextChanged);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -141,6 +133,15 @@
             this.tb_vkupno.Size = new System.Drawing.Size(100, 20);
             this.tb_vkupno.TabIndex = 9;
             // 
+            // tb_uplata
+            // 
+            this.tb_uplata.Location = new System.Drawing.Point(149, 153);
+            this.tb_uplata.Name = "tb_uplata";
+            this.tb_uplata.Size = new System.Drawing.Size(100, 20);
+            this.tb_uplata.TabIndex = 6;
+            this.tb_uplata.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_uplata_KeyPress);
+            this.tb_uplata.Leave += new System.EventHandler(this.tb_uplata_Leave);
+            // 
             // Uplatuvanje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -172,10 +173,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tb_koeficient;
-        private System.Windows.Forms.TextBox tb_uplata;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tb_vkupno;
+        private System.Windows.Forms.TextBox tb_uplata;
     }
 }

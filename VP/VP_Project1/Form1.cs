@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,10 +15,13 @@ namespace VP_Project1
     public partial class form1 : Form
     {
         private int k0_x, k1_x, k2_x, k3_x, k0_y, k1_y, k2_y, k3_y, sis;
+        public SoundPlayer sound, gun;
         public form1()
         {
             InitializeComponent();
             vratiNazad();
+            sound = new SoundPlayer(Resources.gallop);
+            gun = new SoundPlayer(Resources.gun);
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -29,7 +33,6 @@ namespace VP_Project1
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-
             var rand = new Random();
             var s = rand.Next(1, 100);
             label1.Text = s.ToString();
@@ -100,6 +103,7 @@ namespace VP_Project1
         public void vratiNazad()
         {
             button1.Enabled = true;
+            button2.Enabled = true;
             lbUplata.Items.Clear();
             k0_x = 0;
             k1_x = 0;
@@ -120,7 +124,7 @@ namespace VP_Project1
             {
                 timer1.Stop();
                 timer2.Stop();
-                
+                sound.Stop();
                 switch (konj)
                 {
                     case 0:
@@ -158,6 +162,10 @@ namespace VP_Project1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            button2.Enabled = false;
+            gun.PlaySync();
+            sound.PlayLooping();
+
             button1.Enabled = false;
             timer1.Start();
             timer2.Start();

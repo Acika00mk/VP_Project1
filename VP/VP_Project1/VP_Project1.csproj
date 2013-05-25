@@ -89,7 +89,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assets\food.jpg" />
     <None Include="Resources\bg.png" />
     <None Include="Resources\k3_3.png" />
     <None Include="Resources\k3_2.png" />
@@ -108,21 +107,12 @@
     <None Include="Resources\k0_1.png" />
     <None Include="Resources\k0_0.png" />
     <None Include="Resources\Adobe Premiere.ico" />
-    <None Include="Resources\Adobe Premiere.png" />
-    <None Include="Resources\k2_3.jpg" />
-    <None Include="Resources\k2_2.jpg" />
-    <None Include="Resources\k2_1.jpg" />
-    <None Include="Resources\k2_0.jpg" />
-    <None Include="Resources\k2_%281%29.png" />
-    <None Include="Resources\k1_%284%29.png" />
-    <None Include="Resources\k1_%283%29.png" />
-    <None Include="Resources\k1_%282%29.png" />
-    <None Include="Resources\k3.png" />
-    <None Include="Resources\k2.png" />
-    <None Include="Resources\k1.png" />
-    <None Include="Resources\k0.jpg" />
-    <None Include="Resources\k0.bmp" />
-    <None Include="Resources\img.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gallop.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gun.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

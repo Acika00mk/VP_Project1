@@ -22,6 +22,7 @@ namespace VP_Project1
         }
         public override string ToString()
         {
+
             return string.Format(Name  + " " + Konj   + " : " + Koeficient + " x " +Iznos +"=" + Vkupno);
         }
     }
