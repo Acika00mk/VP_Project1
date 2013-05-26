@@ -35,8 +35,6 @@ namespace VP_Project1
         {
             var rand = new Random();
             var s = rand.Next(1, 100);
-            label1.Text = s.ToString();
-            label2.Text = (s % 4).ToString();
             if (s % 4 == 0)
             {
                 k0_x += 12;
@@ -119,7 +117,6 @@ namespace VP_Project1
         public void End(int x, int konj)
         {
             Invalidate();
-            label2.Text = x.ToString();
             if (x > 385)
             {
                 timer1.Stop();
