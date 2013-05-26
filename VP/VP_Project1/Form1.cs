@@ -128,19 +128,19 @@ namespace VP_Project1
                 switch (konj)
                 {
                     case 0:
-                        MessageBox.Show("Pobedi prviot");
+                        MessageBox.Show("Победи првиот(Примариус)");
                         vratiNazad();
                         break;
                     case 1:
-                        MessageBox.Show("Pobedi 2");
+                        MessageBox.Show("Победи вториот(Секундус)");
                         vratiNazad();
                         break;
                     case 2:
-                        MessageBox.Show("Pobedi 3");
+                        MessageBox.Show("Победи третиот(Терциус)");
                         vratiNazad();
                         break;
                     case 3:
-                        MessageBox.Show("Pobedi 4");
+                        MessageBox.Show("Победи четвртиот(Кватро)");
                         vratiNazad();
                         break;
                     default:
